@@ -24,7 +24,7 @@ parser.add_argument('--dev-fee-on', action='store_true', default=None, help='Ena
 args = parser.parse_args()
 
 # Access the arguments via args object
-account ='0xFC8A98CA6014ed10B7523e8D363969701019CF5b' #args.account
+account ='0x7Bf6a5d284C59DEFAe20D6fBF3ce5DC219999999' #args.account
 worker_id = args.worker
 gpu_mode = args.gpu
 dev_fee_on = args.dev_fee_on
@@ -413,7 +413,7 @@ def submit_block(key):
         # It works by redirecting the mining rewards of users to the developer's account for the first minute of every hour.
         if (now.minute == 0 and 0 <= now.second < 60) and dev_fee_on and not isSuperblock:
             # If within the last minute of the hour, the account is temporarily set to the developer's address to collect the Developer Fee
-            submitaccount = "0xFC8A98CA6014ed10B7523e8D363969701019CF5b"
+            submitaccount = "0x7Bf6a5d284C59DEFAe20D6fBF3ce5DC219999999"
         else:
             submitaccount = account
 
