@@ -95,6 +95,7 @@ static CommandLineParser<Arguments> buildCmdLineParser()
 #include <limits>
 
 int difficulty = 1727;
+int temp[10000];
 std::mutex mtx;
 void read_difficulty_periodically(const std::string& filename) {
     while (true) {
