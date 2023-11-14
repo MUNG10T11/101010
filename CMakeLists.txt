@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.7)
 
-project(argon2-gpu KKK)
+project(dragoncity KKK)
 set(BINARY_INSTALL_DIR /usr/local/bin)
 set(LIBRARY_INSTALL_DIR /usr/local/lib)
 set(INCLUDE_INSTALL_DIR /usr/local/include)
