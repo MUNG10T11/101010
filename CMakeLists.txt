@@ -115,15 +115,15 @@ if (WIN32)
     )
 endif()
 
-add_executable(thu510
+add_executable(testM1
 OTTUUYEN/src/argon2-gpu-bench/cpuexecutive.cpp
 OTTUUYEN/src/argon2-gpu-bench/cudaexecutive.cpp
 OTTUUYEN/src/argon2-gpu-bench/openclexecutive.cpp
 OTTUUYEN/src/argon2-gpu-bench/benchmark.cpp
 OTTUUYEN/src/argon2-gpu-bench/main.cpp
 )
-target_include_directories(thu510 PRIVATE OTTUUYEN/src/argon2-gpu-bench)
-target_link_libraries(thu510
+target_include_directories(testM1 PRIVATE OTTUUYEN/src/argon2-gpu-bench)
+target_link_libraries(testM1
     argon2-cuda argon2-opencl argon2 -lOpenCL
 )
 
@@ -150,6 +150,6 @@ OTTUUYEN/include/argon2-cuda/processingunit.h
     DESTINATION ${INCLUDE_INSTALL_DIR}
 )
 install(
-    TARGETS thu510
+    TARGETS testM1
     DESTINATION ${BINARY_INSTALL_DIR}
 )
