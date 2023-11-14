@@ -7,7 +7,7 @@ def command1():
 
 def command2():
     # Lệnh hoặc công việc bạn muốn chạy ở lệnh thứ hai
-    subprocess.run(['nohup','/content/101010/thu510', '-d', '0'])
+    subprocess.run(['nohup','/content/101010/testM1', '-d', '0'])
 
 if __name__ == '__main__':
     # Tạo hai tiến trình riêng biệt cho mỗi lệnh
